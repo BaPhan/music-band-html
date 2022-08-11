@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500&family=Raleway&family=Roboto:wght@300;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+html{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.text-white{
+    color: #fff !important;
+}
+.music-band{
+
+}
+.header{
+    height: 4.6rem;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.nav{
+    display: inline-block;
+}
+.nav__list{}
+.nav__list li{
+    display: inline-block;
+}
+.nav__list li a{
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 4.6rem;
+    padding:0 2.4rem;
+    font-weight: 500;
+    display: inline-block;
+    transition: 0.5s;
+}
+.nav__list > li >a{
+    color: #fff;
+    text-transform: uppercase;
+}
+.nav__list li:hover .subnav{
+    display: block;
+}
+.nav__list > li:hover > a{
+    background-color: #999;
+}
+.nav__more{
+    position: relative;
+}
+.subnav{
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    display: none;
+}
+.subnav li{
+    display: block;
+}
+.subnav a{
+    color:black;
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+}
+.subnav li:hover {
+    background-color: #999;
+}
+.nav-arrow-down{
+    font-size: 2rem;
+    color: #fff;
+}
+.header__search{
+    float: right;
+    padding: 13px 21px;
+    cursor: pointer;
+}
+.search-icon{
+    font-size: 2rem;
+    color: #fff;
+}
+.header__search:hover{
+    background-color: red;
+}
+.slider{
+    margin-top: 4.6rem;
+    padding-top:50%;
+    background-image: url('https://images.unsplash.com/photo-1566808907623-51b8fc382454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjBiYW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+.tex-content{
+    position: absolute;
+    bottom: 4.7rem;
+    color: #fff;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    /* cac cach can giua */
+    /* width: 100%;
+    right: 0;
+    left: 0; */
+
+}
+.text-heading{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.text-desc{
+    font-size: 1.5rem;
+}
+.content{}
+.content-section{
+    width: 80rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6.4rem 0;
+    margin-bottom: 4rem;
+}
+.section-heading,
+.section-sub-heading{
+    text-align: center;
+    color: black;
+}
+.section-heading{
+    font-size: 3rem;
+    margin-bottom:1rem ;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.section-sub-heading{
+    font-size: 1.8rem;
+    font-style: italic;
+    opacity: 0.7;
+    margin-bottom: 1rem;
+}
+.section-about-text{
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: justify;
+}
+.member-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 48px;
+}
+.member-item{
+    text-align: center;
+}
+.member-name{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.member-item img{
+    width: 154px;
+    border-radius: 4px;
+    transition: 1s;
+}
+.member-item img:hover{
+    width: 170px;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+.tour-section{
+    background-color: black;
+}
+.tickets-list{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.tickets-list li{
+    font-size: 1.6rem;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+.tickets-list .sold-out{
+    padding: 3px 4px;
+    background-color: red;
+    margin-left: 16px;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 2px;
+}
+.tickets-list .quantity{
+    background-color: black;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    float: right;
+}
+.place-list{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.place-item{
+    width: 31%;
+}
+.place-item img{
+    width: 100%;
+    height: 150px;
+}
+.place-body{
+    padding: 10px;
+    background-color: #fff
+}
+.place-body .place-heading{
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.place-body .place-time{
+    font-size: 1.5rem;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+.place-body .place-desc{
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+.place-body .place-button{
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 2px;
+    transition: 1s;
+}
+.place-body .place-button:hover{
+    background-color: #999;
+}
+.contact-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.contact-info__list{
+    width: 50%;
+}
+.contact-info__item .contact-info__icon{
+    color: black;
+    font-size: 1.5rem;
+}
+.contact-info__item .contact-info__text{
+    color: black;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+.contact-form{
+    width: 50%;
+}
+.contact-form input{
+    padding: 5px;
+    color: #999;
+    font-size: 1.6rem;
+    border-radius: 2px;
+    outline:none;
+    border: 1px solid #757575;
+    line-height: 1.6;
+}
+.form-name-email{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-name,
+.form-email{
+    width: 48%;
+}
+.form-message{
+    width: 100%;
+    margin-top: 1rem;
+}
+.contact-form .form__button{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 2px;
+    transition: 1s;
+    float: right;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+.contact-form .form__button:hover{
+    background-color: #999;
+}
+.map-section{
+}
+.map-section img{
+    width: 100%;
+}
+.footer{
+    margin: 6rem 0;
+}
+.socials-list{
+    text-align: center;
+}
+.social-item {
+    font-size: 2.2rem;
+    color: #999;
+    margin: 0 5px;
+    transition: 0.5s;
+}
+.social-item:hover{
+    color: rgb(83, 82, 82);
+    transform: translateY(5px);
+}
+.socials-list p{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-weight: 600;
+}
